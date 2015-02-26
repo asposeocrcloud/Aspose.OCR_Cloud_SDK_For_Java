@@ -22,8 +22,8 @@ import static org.junit.Assert.*;
  */
 public class OcrApiTest {
 	OcrApi ocrApi;
-	String appSID = "b8d0bf27-62f0-4b5c-a9d7-83268ac53861";
-	String apiKey = "76706419dc70d5a2c37421570d1405c8";
+	String appSID = "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx";
+	String apiKey = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx";
 	
 	public OcrApiTest() {
 	}
