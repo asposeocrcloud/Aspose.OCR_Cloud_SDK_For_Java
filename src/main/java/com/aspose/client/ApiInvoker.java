@@ -239,7 +239,7 @@ public class ApiInvoker {
     }
 		} else if ("DELETE".equals(method)) {
 			if (body == null) {
-        response = builder.delete(ClientResponse.class, serialize(body));
+        response = builder.delete(ClientResponse.class);
 			} else {
         response = builder.type(contentType).delete(ClientResponse.class, serialize(body));
     }
