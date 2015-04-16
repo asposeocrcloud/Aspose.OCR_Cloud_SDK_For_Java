@@ -4,22 +4,24 @@
  */
 package com.aspose.ocr.api;
 
-import com.aspose.client.ApiInvoker;
-import com.aspose.client.ApiException;
-import com.aspose.ocr.model.OCRResponse;
+import static org.junit.Assert.assertNull;
+
 import java.io.File;
-import java.net.URISyntaxException;
+
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
-import static org.junit.Assert.*;
+
+import com.aspose.client.ApiException;
+import com.aspose.ocr.model.OCRResponse;
 
 /**
  *
- * @author SQL
- */
+ * @author Imran Anwar
+ * @author Farooq Sheikh
+*/
 public class OcrApiTest {
 	OcrApi ocrApi;
 	String appSID = "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx";
@@ -38,11 +40,7 @@ public class OcrApiTest {
 	
 	@Before
 	public void setUp() {
-		ocrApi = new OcrApi();
-		ocrApi.setBasePath("http://api.aspose.com/v1.1");
-		ocrApi.getInvoker().addDefaultHeader("apiKey", apiKey);
-		ocrApi.getInvoker().addDefaultHeader("appSID", appSID);
-
+		ocrApi = new OcrApi("http://api.aspose.com/v1.1",apiKey,appSID);
 	}
 	
 	@After

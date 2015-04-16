@@ -42,7 +42,7 @@ public class ResponseMessage {
     StringBuilder sb = new StringBuilder();
     sb.append("class ResponseMessage {\n");
     sb.append("  Code: ").append(Code).append("\n");
-	sb.append("  Status: ").append(Status).append("\n");
+        sb.append("  Status: ").append(Status).append("\n");
     sb.append("  Message: ").append(Message).append("\n");
     sb.append("}\n");
     return sb.toString();
