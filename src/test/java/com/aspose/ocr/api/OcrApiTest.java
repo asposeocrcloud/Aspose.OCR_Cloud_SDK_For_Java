@@ -14,7 +14,7 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import com.aspose.client.ApiException;
+import com.aspose.ocr.client.ApiException;
 import com.aspose.ocr.model.OCRResponse;
 
 /**

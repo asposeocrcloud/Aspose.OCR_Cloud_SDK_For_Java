@@ -1,4 +1,4 @@
-package com.aspose.client;
+package com.aspose.ocr.client;
 
 public class ApiException extends RuntimeException {
   int code = 0;

@@ -1,9 +1,8 @@
 package com.aspose.ocr.api;
 
-import com.aspose.client.ApiException;
-import com.aspose.client.ApiInvoker;
-import com.aspose.client.ApiInvokerResponse;
-
+import com.aspose.ocr.client.ApiException;
+import com.aspose.ocr.client.ApiInvoker;
+import com.aspose.ocr.client.ApiInvokerResponse;
 import com.aspose.ocr.model.OCRResponse;
 import com.sun.jersey.multipart.FormDataMultiPart;
 
@@ -23,11 +22,24 @@ public class OcrApi {
     apiInvoker.addDefaultHeader(apiInvoker.APP_SID, appSid);
   }
 
+  public OcrApi(String basePath, String apiKey, String appSid, boolean isDebug) {
+          this.basePath = basePath;
+          apiInvoker.addDefaultHeader(apiInvoker.API_KEY, apiKey);
+          apiInvoker.addDefaultHeader(apiInvoker.APP_SID, appSid);
+          if(isDebug)
+                  apiInvoker.enableDebug();
+   }
   public OcrApi(String apiKey, String appSid) {
     apiInvoker.addDefaultHeader(apiInvoker.API_KEY, apiKey);
     apiInvoker.addDefaultHeader(apiInvoker.APP_SID, appSid);
   }
 
+  public OcrApi(String apiKey, String appSid, boolean isDebug) {
+          apiInvoker.addDefaultHeader(apiInvoker.API_KEY, apiKey);
+          apiInvoker.addDefaultHeader(apiInvoker.APP_SID, appSid);
+          if(isDebug)
+                  apiInvoker.enableDebug();
+   }  
   public ApiInvoker getInvoker() {
     return apiInvoker;
   }

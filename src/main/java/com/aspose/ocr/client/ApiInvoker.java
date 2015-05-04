@@ -1,4 +1,4 @@
-package com.aspose.client;
+package com.aspose.ocr.client;
 
 
 import java.io.File;
@@ -38,7 +38,7 @@ public class ApiInvoker {
   private static ApiInvoker INSTANCE = new ApiInvoker();
   private Map<String, Client> hostMap = new HashMap<String, Client>();
   private Map<String, String> defaultHeaderMap = new HashMap<String, String>();
-  private boolean isDebug = true;
+  private boolean isDebug = false;
   private static final String HMAC_SHA1_ALGORITHM = "HmacSHA1";
 
 	public final String APP_SID = "appSid";
